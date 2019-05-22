@@ -20,4 +20,9 @@ document.onkeyup = function(event) {
             numGuesses = 9;
             guessChoices = [];
         }
-    }}
+        if (userGuess != computerGuess) {
+            numGuesses --;
+            guessChoices.push(userGuess);
+        }    
+    }
+ };
