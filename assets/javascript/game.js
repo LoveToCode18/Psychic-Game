@@ -23,6 +23,11 @@ document.onkeyup = function(event) {
         if (userGuess != computerGuess) {
             numGuesses --;
             guessChoices.push(userGuess);
-        }    
-    }
- };
+        }  
+        if (numGuesses === 0) {
+ 
+            numGuesses = 9;
+            losses ++;
+            guessChoices = []; 
+        }
+    }};
