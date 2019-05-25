@@ -30,4 +30,14 @@ document.onkeyup = function(event) {
             losses ++;
             guessChoices = []; 
         }
+        var html = 
+        "<h1> The Psychic Game </h1>" +
+        "<p>Guess the letter</p>" +
+        "<p>Wins: " + wins + "</p>" +
+        "<p>Losses: " + losses + "</p>" +
+        "<p>Guesses Left: " + numGuesses + "</p>" +
+        "<p>Your Guesses so far: " + guessChoices.join(", ") + "</p>";
+     
+        document.querySelector("html").innerHTML = html;
+       
     }};
